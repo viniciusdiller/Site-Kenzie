@@ -1,0 +1,187 @@
+/* RESET */
+body, h1, h2, h3, p, button, ul, li {
+    margin: 0;
+    padding: 0;
+    border: none;
+    box-sizing: border-box;
+  }
+  
+  body {
+    color: white;
+    font-family:"JetBrains Mono", sans-serif;
+  }
+  
+  .secao-destaque, .secao-calendario {
+    background-color: #00005f;
+  }
+  
+  .secao-conteudo, #rodape {
+    background-color: #00002a;
+  }
+  
+  .texto-superior-principal {
+    font-size: 22px;
+    font-weight: 800;
+  }
+  
+  .titulo-principal {
+    font-size: 70px;
+    font-weight: 900;
+    padding: 32px 0; 
+  }
+  
+  .paragrafo-padrao {
+    font-family: "Monnntserrat", sans-serif;
+    font-size: 18px;
+    line-height: 30px;
+    padding-bottom: 32px;
+  }
+  
+  .texto-superior-secundario {
+    font-size: 15px; 
+  }
+  
+  .titulo-secundario {
+    font-size: 42px;
+    padding: 32px 0;
+  }
+  
+  .titulo-terceario{
+    font-size: 32px;
+  }
+  
+  .paragrafo-menor {
+    font-family: "Montserrat", sans-serif;
+  }
+  
+  svg {
+    fill: white;
+  }
+  
+  .secao-destaque, .secao-conteudo, .secao-calendario {
+    padding: 80px;
+  }
+  
+  .botao-chamada {
+    font-family:"JetBrains Mono", sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    padding: 25px 50px;
+    background-color: #00ffa5;
+    cursor: pointer;
+   }
+  
+  .lista-cartoes {
+   list-style: none;
+    padding-bottom: 32px;
+    
+    display: flex;
+    gap: 10px;
+  }
+  
+  .cartao {
+    border: 1px solid gray;
+    padding: 15px;
+    
+    width: 100%;
+    
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  #rodape {
+    padding:32px 25px;
+    border-top: 1px solid gray;
+    
+    display: flex;
+    gap: 32px;
+  }
+  .rodape-link {
+    color: white;
+    text-decoration:none;
+  }
+  .rodape-link:hover {
+    color: rgb(0, 238, 255);
+    text-decoration: underline;
+  }
+  .redes-sociais {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    justify-content: space-between;
+  }
+  .contato {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  /*  MODAL*/
+  .modal[open] {
+    background-color: #191c1f;
+    color: white;
+    border: 2px solid blue;
+    
+    max-width: 400px;
+    
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .modal::backdrop {
+    background-color: rgba(0, 0, 0, 0.7);
+  }
+
+  .cabecalho {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .botao-fechar-modal {
+    background-color: #343a40;
+    padding: 8px 12px;
+    color: #adb5bd;
+    cursor: pointer;
+  }
+  
+  .input-modal {
+    padding: 14px 20px;
+    border: 1px solid gray;
+    background-color: #191c1f;
+    font-family: "JetBrains Mono", sans-serif;
+    color: white;
+  }
+  
+  .botao-inscricao {
+    font-family:"JetBrains Mono", sans-serif;
+    font-weight: 700;
+    font-size: 15px;
+    padding: 10px 30px;
+    background-color: #00ffa5;
+    cursor: pointer;
+  }
+  
+  
+  
+  @media (max-width: 1068px){
+    .lista-cartoes{
+      flex-direction: column;
+    }
+  }
+  
+  @media (max-width: 580px){
+    .titulo-principal{
+      font-size: 45px;
+    }
+    
+    #rodape {
+      flex-direction: column;
+      gap: 16px;
+    }
+    .contatos {
+      gap: 16px;
+    }
+  }
